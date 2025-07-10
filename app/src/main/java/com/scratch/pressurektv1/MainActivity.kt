@@ -24,11 +24,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import com.scratch.pressurektv1.ui.theme.PressureKTV1Theme
+import java.time.ZonedDateTime
+
+//class TimePressureTuple(time: ZonedDateTime, pressure: Double)
 
 class MainActivity : ComponentActivity(), SensorEventListener {
     private var mSensorManager: SensorManager? = null
     private var pressureSensor: Sensor? = null
     private var pressureReading = mutableDoubleStateOf(1013.0)
+//    private var pressureReadings = mutableListOf(ArrayList<TimePressureTuple>())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
